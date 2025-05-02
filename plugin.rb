@@ -7,7 +7,7 @@
 enabled_site_setting :custom_bookmark_route_enabled
 
 after_initialize do
-  module ::bookmark-route
+  module ::BookmarkRoute
   end
 
   Discourse::Application.routes.append do
