@@ -1,0 +1,4 @@
+plugins:
+  custom_bookmark_route_enabled:
+    default: true
+    client: true
