@@ -11,9 +11,9 @@ after_initialize do
   end
 
   Discourse::Application.routes.append do
-    get '/bookmarks' =-> 'bookmarks#index'
-    # post '/bookmarks' => 'bookmarks#create'
-    # delete '/bookmarks/:id' => 'bookmarks#destroy'
+    get '/bookmarks' =-> 'list#bookmarks'
+    post '/bookmarks' => 'bookmarks#create'
+    delete '/bookmarks/:id' => 'bookmarks#destroy'
   end
 
   class BookmarksController < ApplicationController
