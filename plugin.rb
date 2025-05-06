@@ -11,7 +11,7 @@ after_initialize do
   end
 
   Discourse::Application.routes.append do
-    get '/bookmarks' =-> 'list#bookmarks'
+    get '/bookmarks' => 'list#bookmarks'
     post '/bookmarks' => 'bookmarks#create'
     delete '/bookmarks/:id' => 'bookmarks#destroy'
   end
